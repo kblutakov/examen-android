@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MobLab Konstantin</string>
+    <string name="tab_text_1">Fer ingres</string>
+    <string name="tab_text_2">Llista de ingresos</string>
+    <string name="add_ingr_desp">Afegir despeses o ingressos</string>
+    <string name="opt">Accions: </string>
+    <string name="descr">Descripcio:</string>
+    <string name="descr_of_descr">Descriu a que correspon el moviment</string>
+    <string name="quantity">Quantitat:</string>
+    <string name="descr_of_quantity">Introdueix la quantitat</string>
+    <string name="add_desp">AFEGIR DESPESA</string>
+    <string name="add_ingr">AFEGIR INGRES</string>
+    <string name="titol_result">Resultat actual:</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

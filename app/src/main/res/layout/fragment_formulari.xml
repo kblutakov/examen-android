@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.FragmentFormulari">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btn_ingr"
+            style="@style/Button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="@string/add_ingr"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_desp" />
+
+        <Button
+            android:id="@+id/btn_desp"
+            style="@style/Button"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/add_desp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_value" />
+
+        <EditText
+            android:id="@+id/input_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/descr_of_quantity"
+            android:inputType="number"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/txt_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/txt_quantity" />
+
+        <TextView
+            android:id="@+id/txt_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/quantity"
+            android:textAppearance="@style/txt_common"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/input_descr"
+            app:layout_constraintTop_toBottomOf="@+id/input_descr" />
+
+        <EditText
+            android:id="@+id/input_descr"
+            android:layout_width="356dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="16dp"
+            android:ems="10"
+            android:hint="@string/descr_of_descr"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorAccent"
+            app:layout_constraintStart_toStartOf="@+id/txt_descr"
+            app:layout_constraintTop_toBottomOf="@+id/txt_descr" />
+
+        <TextView
+            android:id="@+id/txt_titol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/add_ingr_desp"
+            android:textAppearance="@style/txt_titol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_descr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="@string/descr"
+            android:textAppearance="@style/txt_common"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@+id/txt_titol"
+            app:layout_constraintTop_toBottomOf="@+id/txt_titol" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
